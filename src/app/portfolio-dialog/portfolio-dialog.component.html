@@ -1,0 +1,10 @@
+
+<h2>{{ data.mode === 'add' ? 'Add New Entry' : 'Edit Entry' }}</h2>
+<form>
+  <label>Title: <input [(ngModel)]="entry.title" /></label>
+  <label>Description: <textarea [(ngModel)]="entry.description"></textarea></label>
+  <label>Image URL: <input [(ngModel)]="entry.imageUrl" /></label>
+  <label>Customer Link: <input [(ngModel)]="entry.customerLink" /></label>
+  <button type="button" (click)="save()">Save</button>
+</form>
+

@@ -1,0 +1,12 @@
+
+
+<div *ngFor="let entry of portfolioEntries">
+    <img [src]="entry.imageUrl" alt="{{ entry.title }}">
+    <h3>{{ entry.title }}</h3>
+    <p>{{ entry.description }}</p>
+    <a [href]="entry.customerLink" target="_blank">{{ entry.customerLink }}</a>
+    <button (click)="toggleHidden(entry)">Toggle Hidden</button>
+    <button (click)="editEntry(entry)">Edit</button>
+    <button (click)="deleteEntry(entry.id)">Delete</button>
+  </div>
+  
